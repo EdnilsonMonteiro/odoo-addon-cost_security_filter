@@ -1,1 +1,12 @@
-__pycache__
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Odoo
+*.log
+/config/odoo.conf
+/data/
+
+# IDEs
+.vscode/
+.idea/
