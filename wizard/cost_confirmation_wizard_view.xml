@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_cost_confirmation_wizard_form" model="ir.ui.view">
+        <field name="name">cost.confirmation.wizard.form</field>
+        <field name="model">cost.confirmation.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Aviso de Preço">
+                <field name="message" widget="html" readonly="1" nolabel="1"/>
+                <footer>
+                    <button name="action_confirm" string="Sim, o preço está correto" type="object" class="btn-primary" data-hotkey="q"/>
+                    <button string="Cancelar e revisar" class="btn-secondary" special="cancel" data-hotkey="z"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>
